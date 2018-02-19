@@ -9,7 +9,7 @@ module('Integration | Helper | rental-property-type', function(hooks) {
   test('it renders correctly for a Standalone rental', function(assert) {
     this.set('inputValue', 'Estate');
 
-    await render(hbs`{{rental-property-type inputValue}}`);
+    render(hbs`{{rental-property-type inputValue}}`);
 
     assert.equal(this.$().text().trim(), 'Standalone');
 
